@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Student {
+public class StudentInfo {
 
     int id;
     String name;
@@ -34,7 +34,7 @@ public class Student {
     }
 
     public static void main (String[] args) {
-        Student s = new Student();
+        StudentInfo s = new StudentInfo();
         s.input();
         s.display();
     }

@@ -6,6 +6,6 @@ public class Book {
         Scanner sc = new Scanner(System.in);
 
         System.out.println();
-        System.out.print();
+//        System.out.print();
     }
 }

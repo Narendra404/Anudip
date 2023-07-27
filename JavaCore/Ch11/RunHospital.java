@@ -37,7 +37,7 @@ public class RunHospital {
     public static void main (String[] args) {
         
         System.out.println();
-        System.out.println("When Hospital type reference refers to itself and its direct and inderect children : ");
+        System.out.println("When Hospital type reference refers to itself and its direct and indirect children : ");
         System.out.println();
 
         Hospital obj1 = new Hospital();

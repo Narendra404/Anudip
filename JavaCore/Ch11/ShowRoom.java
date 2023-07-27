@@ -60,8 +60,8 @@ public class ShowRoom {
     void display() {
 
         System.out.println();
-        System.out.println("\tCustomer name\t\t\t\t" + name);
-        System.out.println("\tCustomer mobile number\t\t\t" + mobno);
+        System.out.println("\tCustomer name\t\t\t\t\t\t" + name);
+        System.out.println("\tCustomer mobile number\t\t\t\t" + mobno);
         System.out.println("\tAmount to be paid after discount\t" + amount);
         System.out.println();
     }

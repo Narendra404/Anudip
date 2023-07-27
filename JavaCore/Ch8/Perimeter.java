@@ -14,7 +14,7 @@ public class Perimeter {
 
     float calcPerimeter(float r) {
         
-        return (2 * (22 / 7) * r);
+        return (2 * ((float) 22 / 7) * r);
     }
 
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class Perimeter {
         switch (ch) {
             
             case 1 :
-                System.out.println("Enter the length of the side of the Square : ");
+                System.out.print("Enter the length of the side of the Square : ");
                 int a = sc.nextInt();
                 System.out.println();
                 System.out.println("The Perimeter of the Square is : " + obj.calcPerimeter(a));
@@ -54,7 +54,7 @@ public class Perimeter {
                 break;
 
             case 3 :
-                System.out.println("Enter the length of the radius of the Circle : ");
+                System.out.print("Enter the length of the radius of the Circle : ");
                 float r = sc.nextFloat();
                 System.out.println();
                 System.out.println("The Perimeter of the Circle is : " + obj.calcPerimeter(r));

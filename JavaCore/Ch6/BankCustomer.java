@@ -1,3 +1,5 @@
+package Ch6;
+
 public class BankCustomer {
 
     String acno;

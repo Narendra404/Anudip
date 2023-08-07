@@ -1,3 +1,5 @@
+package Ch6;
+
 import java.util.*;
 
 class Emp {

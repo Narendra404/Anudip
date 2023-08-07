@@ -10,7 +10,7 @@ public class Employee {
     int salary;
     float tax;
 
-    void input(){
+     public void input(){
 
         Scanner sc = new Scanner(System.in);
 
@@ -25,17 +25,17 @@ public class Employee {
         salary = sc.nextInt();
     }
 
-    float calculateTax(int salary) {
+    protected float calculateTax(int salary) {
         
         float tax;
 
         if (salary <= 250000) {
             tax = 0;
         }
-        else if (salary > 250000 && salary <= 500000) {
+        else if (salary <= 500000) {
             tax = (salary - 250000) * 0.10f;
         }
-        else if (salary > 500000 && salary <= 1000000) {
+        else if (salary <= 1000000) {
             tax = (salary - 500000) * 0.20f + 30000;
         }
         else {
@@ -45,7 +45,12 @@ public class Employee {
         return tax;
     }
 
-    void display(){
+    public float getAmountAfterTax() {
+
+         return salary - tax;
+    }
+
+    public void display(){
 
         tax = calculateTax(salary);
         System.out.println();
@@ -57,9 +62,9 @@ public class Employee {
         System.out.println("Employee's salary after tax deduction : " + (salary - tax));
     }
 
-    public static void main (String[] args) {
-        Employee e = new Employee();
-        e.input();
-        e.display();
-    }
+//    public static void main (String[] args) {
+//        Employee e = new Employee();
+//        e.input();
+//        e.display();
+//    }
 }

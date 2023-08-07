@@ -52,7 +52,7 @@ public class Employee {
         System.out.println("Employee's address : " + add);
         System.out.println("Employee's salary : " + salary);
         System.out.println("Employee's tax : " + tax);
-        System.out.println("Employee's salary after tax decduction : " + (salary - tax));
+        System.out.println("Employee's salary after tax deduction : " + (salary - tax));
     }
 
     public static void main (String[] args) {

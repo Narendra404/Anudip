@@ -1,8 +1,10 @@
+package Ch11;
+
 import java.util.*;
 
 interface BankAccount {
 
-    public void deposit();
+    void deposit();
     void withdraw();
 }
 
@@ -10,6 +12,7 @@ public class CheckingAccount implements BankAccount {
 
     int balance;
 
+    @Override
     public void deposit() {
 
         Scanner sc = new Scanner(System.in);
@@ -27,6 +30,7 @@ public class CheckingAccount implements BankAccount {
         System.out.println();
     }
 
+    @Override
     public void withdraw() {
 
         Scanner sc = new Scanner(System.in);

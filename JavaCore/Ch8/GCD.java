@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class GCD {
@@ -9,7 +11,7 @@ public class GCD {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        int min = (a < b)? a : b;
+        int min = Math.min(a, b);
 
         while (min > 0) {
             

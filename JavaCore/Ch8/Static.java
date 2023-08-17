@@ -1,4 +1,4 @@
-import java.util.*;
+package Ch8;
 
 public class Static {
     public static void main(String[] args) {

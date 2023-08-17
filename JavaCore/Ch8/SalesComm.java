@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class SalesComm {
@@ -25,7 +27,7 @@ public class SalesComm {
         System.out.print("Enter the number of employees : ");
         int n = sc.nextInt();
 
-        int gross[] = new int[n];
+        int[] gross = new int[n];
 
         System.out.println();
         System.out.println("Enter the gross weekly sales of each employee one by one : ");
@@ -34,13 +36,13 @@ public class SalesComm {
             gross[i] = sc.nextInt();
         }
         
-        int comm[] = new int[n];
+        int[] comm = new int[n];
         for (int i = 0; i < n; i++) {
             
             comm[i] = truncate(0.09f * gross[i]) + 200;
         }
 
-        int count[] = new int[9];
+        int[] count = new int[9];
         Arrays.fill(count, 0);
 
         for (int i = 0; i < n; i++) {

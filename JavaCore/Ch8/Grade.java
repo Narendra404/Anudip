@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class Grade {
@@ -15,35 +17,12 @@ public class Grade {
         System.out.println("The total marks of the student is : " + total);
 
         switch ((total / 3) / 10) {
-            
-            case 0 :
-            case 1 :
-            case 2 :
-            case 3 :
-                System.out.println("The student has obtained a FAIL grade.");
-                break;
-                
-            case 4 :
-            case 5 :
-            case 6 :
-                System.out.println("The student has obtained a PASS grade.");
-                break;
-
-            case 7 :
-                System.out.println("The student has obtained a PASS grade with THIRD CLASS.");
-                break;
-
-            case 8 :
-                System.out.println("The student has obtained a PASS grade with SECOND CLASS.");
-                break;
-
-            case 9 :
-                System.out.println("The student has obtained a PASS grade with FIRST CLASS.");
-                break;
-
-            case 10 :
-                System.out.println("The student has obtained a PASS grade with FIRST CLASS DISTINCTION.");
-                break;
+            case 0, 1, 2, 3 -> System.out.println("The student has obtained a FAIL grade.");
+            case 4, 5, 6 -> System.out.println("The student has obtained a PASS grade.");
+            case 7 -> System.out.println("The student has obtained a PASS grade with THIRD CLASS.");
+            case 8 -> System.out.println("The student has obtained a PASS grade with SECOND CLASS.");
+            case 9 -> System.out.println("The student has obtained a PASS grade with FIRST CLASS.");
+            case 10 -> System.out.println("The student has obtained a PASS grade with FIRST CLASS DISTINCTION.");
         }
     }
 }

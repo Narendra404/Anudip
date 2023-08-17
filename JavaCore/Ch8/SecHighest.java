@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class SecHighest {
@@ -9,7 +11,7 @@ public class SecHighest {
         System.out.print("Enter the size of the array : ");
         int n = sc.nextInt();
 
-        int arr[] = new int[n];
+        int[] arr = new int[n];
 
         System.out.println();
         System.out.println("Enter the elements of the array one by one : ");

@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class Metro {
@@ -25,53 +27,45 @@ public class Metro {
          int noOfTkts = sc.nextInt();
 
          System.out.println();
-         switch (dest) {
-             case 1: 
-                 System.out.println("IffcoChowk selected");
-                 System.out.println("Price : 50\t No of tickets : "+ noOfTkts);
-                 price += 50 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-
-             case 2: 
-                 System.out.println("HUDA selected");
-                 System.out.println("Price : 100\t No of tickets : "+ noOfTkts);
-                 price += 100 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-
-             case 3: 
-                 System.out.println("Sikandarpur selected");
-                 System.out.println("Price : 50\t No of tickets : "+ noOfTkts);
-                 price += 50 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-
-             case 4: 
-                 System.out.println("Arjangard selected");
-                 System.out.println("Price : 150\t No of tickets : "+ noOfTkts);
-                 price += 150 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-             
-             case 5: 
-                 System.out.println("JorBagh selected");
-                 System.out.println("Price : 200\t No of tickets : "+ noOfTkts);
-                 price += 200 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-
-             case 6: 
-                 System.out.println("NewDelhi selected");
-                 System.out.println("Price : 250\t No of tickets : "+ noOfTkts);
-                 price += 250 * noOfTkts;
-                 System.out.println("Total current price : "+ price);
-             break;
-
-             default:
-                 System.out.println("Wrong destination selected");
-             break;
-         }  
+       switch (dest) {
+           case 1 -> {
+               System.out.println("IffcoChowk selected");
+               System.out.println("Price : 50\t No of tickets : " + noOfTkts);
+               price += 50 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           case 2 -> {
+               System.out.println("HUDA selected");
+               System.out.println("Price : 100\t No of tickets : " + noOfTkts);
+               price += 100 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           case 3 -> {
+               System.out.println("Sikandarpur selected");
+               System.out.println("Price : 50\t No of tickets : " + noOfTkts);
+               price += 50 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           case 4 -> {
+               System.out.println("Arjangard selected");
+               System.out.println("Price : 150\t No of tickets : " + noOfTkts);
+               price += 150 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           case 5 -> {
+               System.out.println("JorBagh selected");
+               System.out.println("Price : 200\t No of tickets : " + noOfTkts);
+               price += 200 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           case 6 -> {
+               System.out.println("NewDelhi selected");
+               System.out.println("Price : 250\t No of tickets : " + noOfTkts);
+               price += 250 * noOfTkts;
+               System.out.println("Total current price : " + price);
+           }
+           default -> System.out.println("Wrong destination selected");
+       }
 
 
      while (ch == 'y'){
@@ -92,44 +86,37 @@ public class Metro {
          int item = sc.nextInt();
          int quant = sc.nextInt();
          switch (item) {
-             case 1: 
+             case 1 -> {
                  System.out.println("Dosa selected");
-                 System.out.println("Price : 100\t Quantity : "+ quant);
+                 System.out.println("Price : 100\t Quantity : " + quant);
                  bill += 100 * quant;
-                 System.out.println("Total current bill : "+ bill);
-             break;
-
-             case 2: 
+                 System.out.println("Total current bill : " + bill);
+             }
+             case 2 -> {
                  System.out.println("Chicken selected");
-                 System.out.println("Price : 200\t Quantity : "+ quant);
+                 System.out.println("Price : 200\t Quantity : " + quant);
                  bill += 200 * quant;
-                 System.out.println("Total current bill : "+ bill);
-             break;
-
-             case 3: 
+                 System.out.println("Total current bill : " + bill);
+             }
+             case 3 -> {
                  System.out.println("Biryani selected");
-                 System.out.println("Price : 150\t Quantity : "+ quant);
+                 System.out.println("Price : 150\t Quantity : " + quant);
                  bill += 150 * quant;
-                 System.out.println("Total current bill : "+ bill);
-             break;
-
-             case 4: 
+                 System.out.println("Total current bill : " + bill);
+             }
+             case 4 -> {
                  System.out.println("Matter Paneer selected");
-                 System.out.println("Price : 150\t Quantity : "+ quant);
+                 System.out.println("Price : 150\t Quantity : " + quant);
                  bill += 150 * quant;
-                 System.out.println("Total current bill : "+ bill);
-             break;
-             
-             case 5: 
+                 System.out.println("Total current bill : " + bill);
+             }
+             case 5 -> {
                  System.out.println("Vada Pao selected");
-                 System.out.println("Price : 100\t Quantity : "+ quant);
+                 System.out.println("Price : 100\t Quantity : " + quant);
                  bill += 100 * quant;
-                 System.out.println("Total current bill : "+ bill);
-             break;
-
-             default:
-                 System.out.println("Wrong Choice selected");
-             break;
+                 System.out.println("Total current bill : " + bill);
+             }
+             default -> System.out.println("Wrong Choice selected");
          }
 
          System.out.println();

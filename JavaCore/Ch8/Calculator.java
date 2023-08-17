@@ -1,3 +1,5 @@
+package Ch8;
+
 import java.util.*;
 
 public class Calculator {
@@ -15,30 +17,13 @@ public class Calculator {
             char ch = sc.next().charAt(0);
 
            switch (ch) {
-
-             case '+': 
-                 System.out.println("Sum of " + a + " and " + b + " is : " + (a + b));
-              break;
-
-             case '-': 
-                 System.out.println("Sum of " + a + " and " + b + " is : " + (a - b));
-              break;
-
-             case '*': 
-                 System.out.println("Sum of " + a + " and " + b + " is : " + (a * b));
-              break;
-
-             case '/': 
-                 System.out.println("Sum of " + a + " and " + b + " is : " + (a / b));
-              break;
-    
-             case '%': 
-                 System.out.println("Sum of " + a + " and " + b + " is : " + (a % b));
-              break;
-
-              default:
-                 System.out.println("Wrong choice of operator.");
-            }
+               case '+' -> System.out.println("Sum of " + a + " and " + b + " is : " + (a + b));
+               case '-' -> System.out.println("Sum of " + a + " and " + b + " is : " + (a - b));
+               case '*' -> System.out.println("Sum of " + a + " and " + b + " is : " + (a * b));
+               case '/' -> System.out.println("Sum of " + a + " and " + b + " is : " + (a / b));
+               case '%' -> System.out.println("Sum of " + a + " and " + b + " is : " + (a % b));
+               default -> System.out.println("Wrong choice of operator.");
+           }
             System.out.print("Want to calculate again ? (y/n): ");
             flag = sc.next().charAt(0);
 

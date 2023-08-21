@@ -2,7 +2,7 @@ package Ch8;
 
 import java.util.*;
 
-public class Employee {
+public class EmployeeClass {
 
     int id;
     String name;

@@ -1,10 +1,10 @@
 package Misc;
 
-import Ch8.Employee;
+import Ch8.EmployeeClass;
 
 import java.util.Scanner;
 
-public class Trainer extends Employee{
+public class Trainer extends EmployeeClass {
 
     int tid;
     float bonus;
